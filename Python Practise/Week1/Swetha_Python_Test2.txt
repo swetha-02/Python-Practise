@@ -1,0 +1,70 @@
+TEST- 2
+
+1) Tuple Comprehension:
+	No. There is no tuple comprehension it is not efficient than list comprehension.
+
+2)list1 = [1,2,3,4,5]  
+   list2=[6,7,8,9,10]
+   Concatenation --> list1.extend(list2)
+    Repetition --> list1*list1
+
+3) Folder>File1>File2
+
+     shutil.rmtree("Folder>File1>File2)
+
+4) Doc string:
+      def doc():
+    	print("""i am i am 
+      i am not i am when i am""")
+      doc()
+5) Python Namespaces:
+	Namespace defines unique name for each object in python. There are three types of namespaes:
+	1) Local namespaces
+	2) Global namespaces
+	3) Built-in namespaces
+
+6) List: List is a type of data structure, which is mutable and ordered set of collections. List can 
+be defined using []. Same data type elements only allowed in list.
+	list1=[1,2,3,4,5]
+     Tuple: Tuple is similar to list but the values in tuple is immutable. It is defined with ()
+	tuple1=(1,2,3,4,5)
+     Set: Set is defined as the collection of data with different data types. It is unordered. It is defined 
+using {}.
+	set1={2,3,"Swetha","Srinivasan"}
+    Dictionary: Dictionary is colletion of key, value pairs of data. In dictionary, key is immutable 
+where as values are mutable, it is also an ordered collection of data.
+	dict1={"name":"Swetha","age":21}
+7) list1=[1,2,3] list2=[1,2,3] 	
+     print(list1 is list2) 
+     output--> False
+	Explanation:  The output of the given code is False because the id of the list1 and list2 varies. 
+
+8)   5 4 3 2 1
+       4 3 2 1
+       3 2 1
+       2 1 
+       1
+	n=5
+	for i in range(n,0,-1):
+    	   print(i)
+    	   for j in range(i,0,-1):
+       	       print(j,end=" ")
+	print()
+10) def func(n):
+      for i in range(1,n+1):
+         yield i
+       func(5)
+
+13) val={"name":"Swetha","age":21}
+      with open("sample3.json","w") as file:
+      a=json.dumps(val)
+          print(a)
+
+14) num1=int(input("Enter num1:"))
+      num2=int(input("Enter num2:"))
+      prod=num1*num2
+      sum=num1+num2
+      if prod<1000:
+         print(prod)
+      else:
+        print(sum) 
